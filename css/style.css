@@ -1,7 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 html {
   box-sizing: border-box;
   font-size: 16px;
@@ -27,8 +23,12 @@ img {
 }
 
 body {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Nunito', sans-serif;
   text-rendering: optimizeLegibility;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1;
+  color: #6c7a89;
 }
 
 a {
@@ -63,14 +63,40 @@ ul:first-child {
   margin-top: 0;
 }
 
-.header {
-  display: block;
-  text-align: center;
-  padding-top: 80px;
+footer, header, section {
   position: relative;
   float: left;
   clear: both;
   width: 100%;
+}
+
+h2 a {
+  font-weight: 600;
+}
+
+.single h2 p {
+  max-width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h2 {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -.02em;
+  font-family: Nunito,sans-serif;
+  color: #2a2f36;
+}
+
+h2:first-child {
+  margin-top: 0;
+}
+
+.header {
+  display: block;
+  text-align: center;
+  padding-top: 80px;
 }
 
 .header-wrapper {
@@ -139,6 +165,98 @@ ul:first-child {
   color: #2a2f36;
   border-bottom: 2px solid;
 
+}
+
+.page .page-content {
+  float: left;
+  clear: both;
+  width: 100%;
+}
+
+.page {
+  transition: all .6s cubic-bezier(.87,-.41,.19,1.44);
+}
+
+.single {
+  padding: 80px 0;
+}
+
+section {
+  display: block;
+}
+
+.wrap {
+  padding: 0 140px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.listining-post {
+  margin-top: 120px;
+}
+
+.listining-post:first-child {
+  margin-top: 0;
+}
+
+article {
+  display: block;
+}
+
+.listining-post-header {
+  text-align: center;
+}
+
+.listining-post-subtitle {
+  margin-top: 5px;
+  color: #abb7b7;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0;
+}
+
+.listining-post-image {
+  margin-top: 40px;
+  display: block;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.listining-post-content {
+  margin-top: 40px;
+}
+
+.listining-post-content p .button {
+  margin-top: 10px;
+}
+
+.single p a {
+  font-weight: 600;
+  border-bottom: 2px solid #ee983d;
+}
+
+p {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0;
+}
+
+.button {
+  display: inline-block;
+  line-height: 1;
+  border: 2px solid #ee983d;
+  padding: 9px 10px 10px;
+  font-size: 13px;
+  border-radius: 3px;
+  background: #ee983d;
+  color: #fff;
+  letter-spacing: 0;
+  cursor: pointer;
 }
 
 
