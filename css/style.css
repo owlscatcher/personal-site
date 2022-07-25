@@ -1,0 +1,162 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  text-decoration: none;
+  color: #2a2f36;
+  font-weight: 600;
+  transition: all .15s ease-in-out;
+  padding: 0;
+}
+
+a:hover {
+  color: #ee983d;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0;
+}
+
+ul:first-child {
+  margin-top: 0;
+}
+
+.header {
+  display: block;
+  text-align: center;
+  padding-top: 80px;
+  position: relative;
+  float: left;
+  clear: both;
+  width: 100%;
+}
+
+.header-wrapper {
+  padding: 0 140px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.header-avatar {
+  display: block;
+  margin: 0 auto 20px;
+  width: 150px;
+  margin-bottom: 25px;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.header-avatar-img {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+.header-avatar:hover {
+  box-shadow: 0 0 20px #2a2f36;
+  border: 5px
+}
+
+.header-title {
+  font-weight: 600;
+  letter-spacing: 0;
+  font-size: 40px;
+  line-height: 40px;
+  line-height: 1;
+  color: #2a2f36;
+}
+
+.header-tagline {
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.5;
+  font-style: normal;
+  color: #6c7a89;
+}
+
+.header-menu {
+  margin-top: 15px;
+}
+
+.header-menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+}
+
+.header-menu-list-item {
+  padding: 0 12px;
+  display: inline-block;
+}
+
+.header-menu-list-link {
+  font-size: 20px;
+  font-weight: 600;
+  color: #2a2f36;
+  border-bottom: 2px solid;
+
+}
+
+
+.footer {
+  padding: 80px 0;
+  transition: all .6s cubic-bezier(.87,-.41,.19,1.44);
+  text-align: center;
+  position: relative;
+  float: left;
+  clear: both;
+  width: 100%;
+  display: block;
+}
+
+.footer-copyright {
+  margin-top: 20px;
+  display: block;
+  margin-top: 10px;
+  font-size: 13px;
+  color: #abb7b7;
+}
