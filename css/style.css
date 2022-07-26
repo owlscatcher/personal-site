@@ -191,12 +191,19 @@ section {
   margin: 0 auto;
 }
 
-.listining-post {
-  margin-top: 120px;
+.wrap-music {
+  display: grid;
+  padding: 0 120px;
+  margin: 0 auto;
+  text-align: center;
+  grid-template-columns: repeat(3, 380px);
+  justify-content: center;
 }
 
-.listining-post:first-child {
-  margin-top: 0;
+@media screen and (width: 1920px ) {
+  .wrap-music {
+    grid-template-columns: repeat(4, 380px);
+  }
 }
 
 article {
