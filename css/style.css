@@ -202,6 +202,55 @@ section {
   justify-content: center;
 }
 
+.wrap-about {
+  display: grid;
+  padding: 0 120px;
+  margin: 0 auto;
+  text-align: center;
+  grid-template-columns: repeat(3, 380px);
+  justify-content: center;
+}
+
+.wrap-about .listining-post {
+  transition: all .15s ease-in-out;
+  width: 350px;
+  height: 500px;
+  border-style:none;
+  background-color: #0850bd09;
+  border-radius: 5%;
+  box-shadow: 5px 5px 20px #c5daf8;
+}
+
+.wrap-about .listining-post h2 {
+  margin-top: 15px;
+}
+
+.wrap-about .listining-post:hover{
+  box-shadow: 5px 5px 20px #2a2f36;
+}
+
+.wrap-about .listining-post ul {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.wrap-about .listining-post ul li {
+    margin-top: 10px;
+}
+
+.about-me ul {
+  list-style:disc;
+  list-style-position: inside;
+  text-align: left;
+}
+
+.cv {
+  margin-top: 10px;
+  padding: 15px;
+}
+
 @media screen and (width: 1920px ) {
   .wrap-music {
     grid-template-columns: repeat(4, 380px);
