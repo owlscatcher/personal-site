@@ -95,6 +95,10 @@ h2:first-child {
   margin-top: 0;
 }
 
+.active {
+  text-decoration: 2px underline;
+}
+
 .header {
   display: block;
   text-align: center;
